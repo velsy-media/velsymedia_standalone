@@ -1,6 +1,8 @@
 ---
 import { Image } from "astro:assets";
 import Arrow from "../assets/Arrow.svg";
+import sastika from "../assets/sastika.png";
+import Mkm from "../assets/Mkm.png";
 ---
 
 <body class="bg-[#fcfbfa] text-black font-sans">
@@ -20,16 +22,17 @@ import Arrow from "../assets/Arrow.svg";
         <!-- Card 1 -->
         <div>
           <div class="relative bg-gray-200 h-56 rounded-lg">
+             <Image src={Mkm} alt="arrwo" class="w-full h-full"/>
             <div
               class="absolute top-4 right-4 h-8 w-8 bg-black text-orange-500 rounded-full flex items-center justify-center"
             >
-              <span class="text-sm"><Image src={Arrow} alt="arrwo" /></span>
+              <span class="text-sm"><a href="https://mkm.group/"><Image src={Arrow} alt="arrwo" /></a></span>
             </div>
           </div>
           <div class="mt-4">
             <h3 class="font-semibold text-lg">MKM groups</h3>
             <p class="text-sm text-gray-600">
-              We made them a website and helped them wit branding and more
+              We made them a website and helped them with branding and more
             </p>
           </div>
         </div>
@@ -37,10 +40,12 @@ import Arrow from "../assets/Arrow.svg";
         <!-- Card 2 -->
         <div>
           <div class="relative bg-gray-200 h-56 rounded-lg">
+            <Image src={sastika} alt="arrwo" class="w-full h-full"/>
+            
             <div
               class="absolute top-4 right-4 h-8 w-8 bg-black text-orange-500 rounded-full flex items-center justify-center"
             >
-              <span class="text-sm"><Image src={Arrow} alt="arrwo" /></span>
+              <span class="text-sm"><a href="https://sastika.eu/"></a><Image src={Arrow} alt="arrwo" /></span>
             </div>
           </div>
           <div class="mt-4">
@@ -57,7 +62,8 @@ import Arrow from "../assets/Arrow.svg";
             <div
               class="absolute top-4 right-4 h-8 w-8 bg-black text-orange-500 rounded-full flex items-center justify-center"
             >
-              <span class="text-sm"><Image src={Arrow} alt="arrwo" /></span>
+            
+              <span class="text-sm"><a href=""><Image src={Arrow} alt="arrwo" /></a></span>
             </div>
           </div>
           <div class="mt-4">
