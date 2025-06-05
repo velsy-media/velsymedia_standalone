@@ -1,62 +1,73 @@
 ---
-import {Image} from 'astro:assets';
+import { Image } from "astro:assets";
 import Arrow from "../assets/Arrow.svg";
 ---
 
 <body class="bg-[#fcfbfa] text-black font-sans">
-
   <section class="px-6 py-16">
     <div class="max-w-7xl mx-auto">
       <!-- Heading -->
       <h2 class="text-4xl md:text-5xl font-bold text-right mb-12 leading-snug">
-        Check out <span style="text-decoration-color: #F56416;"  class="underline decoration-orange-500 underline-offset-[6px]">our works</span>
+        Check out <span
+          style="text-decoration-color: #F56416;"
+          class="underline decoration-orange-500 underline-offset-[6px]"
+          >our works</span
+        >
         and <br />see for yourself
       </h2>
 
       <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-
         <!-- Card 1 -->
         <div>
           <div class="relative bg-gray-200 h-56 rounded-lg">
-            <div class="absolute top-4 right-4 h-8 w-8 bg-black text-orange-500 rounded-full flex items-center justify-center">
-              <span class="text-sm"><Image src={Arrow} alt="arrwo"/></span>
+            <div
+              class="absolute top-4 right-4 h-8 w-8 bg-black text-orange-500 rounded-full flex items-center justify-center"
+            >
+              <span class="text-sm"><Image src={Arrow} alt="arrwo" /></span>
             </div>
           </div>
           <div class="mt-4">
             <h3 class="font-semibold text-lg">MKM groups</h3>
-            <p class="text-sm text-gray-600">We made them a website and helped them wit branding and more</p>
+            <p class="text-sm text-gray-600">
+              We made them a website and helped them wit branding and more
+            </p>
           </div>
         </div>
 
         <!-- Card 2 -->
         <div>
           <div class="relative bg-gray-200 h-56 rounded-lg">
-            <div class="absolute top-4 right-4 h-8 w-8 bg-black text-orange-500 rounded-full flex items-center justify-center">
-                <span class="text-sm"><Image src={Arrow} alt="arrwo"/></span>
+            <div
+              class="absolute top-4 right-4 h-8 w-8 bg-black text-orange-500 rounded-full flex items-center justify-center"
+            >
+              <span class="text-sm"><Image src={Arrow} alt="arrwo" /></span>
             </div>
           </div>
           <div class="mt-4">
             <h3 class="font-semibold text-lg">Sastika Solutions</h3>
-            <p class="text-sm text-gray-600">We made them a website and helped them wit branding and more</p>
+            <p class="text-sm text-gray-600">
+              We made them a website and helped them wit branding and more
+            </p>
           </div>
         </div>
 
         <!-- Card 3 -->
         <div>
           <div class="relative bg-gray-200 h-56 rounded-lg">
-            <div class="absolute top-4 right-4 h-8 w-8 bg-black text-orange-500 rounded-full flex items-center justify-center">
-                <span class="text-sm"><Image src={Arrow} alt="arrwo"/></span>
+            <div
+              class="absolute top-4 right-4 h-8 w-8 bg-black text-orange-500 rounded-full flex items-center justify-center"
+            >
+              <span class="text-sm"><Image src={Arrow} alt="arrwo" /></span>
             </div>
           </div>
           <div class="mt-4">
             <h3 class="font-semibold text-lg">Ecofash Services</h3>
-            <p class="text-sm text-gray-600">We made them a website and helped them wit branding and more</p>
+            <p class="text-sm text-gray-600">
+              We made them a website and helped them wit branding and more
+            </p>
           </div>
         </div>
-
       </div>
     </div>
   </section>
-
 </body>
-</html>
