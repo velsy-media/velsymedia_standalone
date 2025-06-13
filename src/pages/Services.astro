@@ -2,120 +2,247 @@
 import Phone from "../assets/Phone.png";
 import Post from "../assets/Post.svg";
 import Meta from "../assets/Meta.svg";
-import {Image} from 'astro:assets';
-
---- 
+import { Image } from "astro:assets";
+---
 
 <div class="bg-white text-black py-12 px-4 md:px-12">
-    
-       <!-- Heading at the top -->
-       <div class="text-center mt-16">
-        <h1 class="text-4xl font-bold">
-          From viral <span style="text-decoration-color: #F56416;" class="underline decoration-orange-500">social campaigns</span><br/>
-          to <span style="text-decoration-color: #F56416; "class="underline decoration-orange-500">brand storytelling</span>
-        </h1>
-      </div>
-
-    
-      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
-        
-        <!-- Left Column -->
-        <div class="">
-          <h2 class="text-2xl font-semibold leading-tight">
-            People remember<br />what they experience
-          </h2>
-          <p class="text-gray-700">
-            Creative guerrilla marketing, brand activations, hyperlocal ads, and experiential events for maximum impact and brand recall.
-          </p>
-    
-          
-          <div class="p-0 mx-0 my-0">
-            <Image src={Post} alt="Instagram UI"></Image>
-          </div>
-        </div>
-    
-         <!-- Center Column: Mobile UI Mockup -->
-      <div class="flex justify-center">
-        <Image src={Phone} alt="Instagram UI" style="height: 500px;"  class="w-auto w-full" >
-      </div>
-    
-        <!-- Right Column -->
-        <div class="space-y-10">
-          
-          <div class="space-y-4">
-            <p class="text-black-700 font-semibold">
-              Online Ads boost targeted reach, conversions, and ROI.
-            </p>
-            <div class="flex space-x-3">
-              <Image src={Meta} alt="meta"></Image>
-            </div>
-          </div>
-    
-          <div class="space-y-2">
-            <p class="text-black-700 font-semibold">
-              #Hashtag strategy<br />
-              A/B Testing and more…
-            </p>
-            <p class="text-gray-700">
-              Boosting social media engagement with consistent posting, optimized timing, user-generated content, and interactive strategies.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-    
+  <!-- Heading at the top -->
+  <div class="text-center mt-16">
+    <h1 class="text-4xl font-bold">
+      From viral <span
+        style="text-decoration-color: #F56416;"
+        class="underline decoration-orange-500">social campaigns</span
+      ><br />
+      to <span
+        style="text-decoration-color: #F56416; "
+        class="underline decoration-orange-500">brand storytelling</span
+      >
+    </h1>
   </div>
-  <section class="px-6 py-16" id="services">
-    <div class="max-w-5xl mx-auto">
-      <!-- Heading -->
-      <div>
-        <h2 class="text-4xl md:text-5xl font-bold leading-snug">
-          Your problem defines <br />
-          <span style="text-decoration-color: #F56416;" class="underline decoration-orange-500 ">our service.</span>
-        </h2>
-      </div>
 
-      <!-- Services List -->
-      <div class="mt-8 md:mt-0">
-    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-        <div class="space-y-4"></div>
-      <ul class="border-t border-gray-700 text-right">
-        <li class="flex items-center py-4 border-b border-gray-600">
-          <span style="background-color:#F56416;" class="h-2 w-2 bg-orange-500 rounded-full mr-3"></span>
-          <span class="text-sm md:text-base font-medium">BRAND CONSISTENCY</span>
-        </li>
-        <li class="flex items-center py-4 border-b border-gray-600">
-          <span style="background-color:#F56416;" class="h-2 w-2 bg-orange-500 rounded-full mr-3"></span>
-          <span class="text-sm md:text-base font-medium">SOCIAL MEDIA MANAGEMENT AND MARKETING</span>
-        </li>
-        <li class="flex items-center py-4 border-b border-gray-600">
-          <span style="background-color:#F56416;"  class="h-2 w-2 bg-orange-500 rounded-full mr-3"></span>
-          <span class="text-sm md:text-base font-medium">WEBSITE AND SOFTWARE SOLUTIONS</span>
-        </li>
-        <li class="flex items-center py-4 border-b border-gray-600">
-          <span style="background-color:#F56416;" class="h-2 w-2 bg-orange-500 rounded-full mr-3"></span>
-          <span class="text-sm md:text-base font-medium">TRUE MARKETING</span>
-        </li>
-        <li class="flex items-center py-4 border-b border-gray-600">
-          <span style="background-color:#F56416;" class="h-2 w-2 bg-orange-500 rounded-full mr-3"></span>
-          <span class="text-sm md:text-base font-medium">GRAPHIC DESIGNING</span>
-        </li>
-        <li class="flex items-center py-4 border-b border-gray-600">
-          <span style="background-color:#F56416;" class="h-2 w-2 bg-orange-500 rounded-full mr-3"></span>
-          <span class="text-sm md:text-base font-medium">PAID ADVERTISING</span>
-        </li>
-        <li class="flex items-center py-4 border-b border-gray-600">
-          <span style="background-color:#F56416;" class="h-2 w-2 bg-orange-500 rounded-full mr-3"></span>
-          <span class="text-sm md:text-base font-medium">BUSINESS PROFILE OPTIMIZATION</span>
-        </li>
-        <li class="flex items-center py-4 border-b border-gray-600">
-          <span style="background-color:#F56416;" class="h-2 w-2 bg-orange-500 rounded-full mr-3"></span>
-          <span class="text-sm md:text-base font-medium">EVENT MANAGEMENT</span>
-        </li>
-        <li class="flex items-center py-4 border-b border-gray-600">
-          <span style="background-color:#F56416;" class="h-2 w-2 bg-orange-500 rounded-full mr-3"></span>
-          <span class="text-sm md:text-base font-medium">PRODUCTIONS</span>
-        </li>
-      </ul>
+  <div
+    class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 items-start"
+  >
+    <!-- Left Column -->
+    <div class="">
+      <h2 class="text-2xl font-semibold leading-tight">
+        People remember<br />what they experience
+      </h2>
+      <p class="text-gray-700">
+        Creative guerrilla marketing, brand activations, hyperlocal ads, and
+        experiential events for maximum impact and brand recall.
+      </p>
+
+      <div class="p-0 mx-0 my-0">
+        <Image src={Post} alt="Instagram UI" />
+      </div>
     </div>
-  </section>
+
+    <!-- Center Column: Mobile UI Mockup -->
+    <div class="flex justify-center">
+      <Image
+        src={Phone}
+        alt="Instagram UI"
+        style="height: 500px;"
+        class="w-auto w-full"
+      />
+
+      <!-- Right Column -->
+      <div class="space-y-10">
+        <div class="space-y-4">
+          <p class="text-black-700 font-semibold">
+            Online Ads boost targeted reach, conversions, and ROI.
+          </p>
+          <div class="flex space-x-3">
+            <Image src={Meta} alt="meta" />
+          </div>
+        </div>
+
+        <div class="space-y-2">
+          <p class="text-black-700 font-semibold">
+            #Hashtag strategy<br />
+            A/B Testing and more…
+          </p>
+          <p class="text-gray-700">
+            Boosting social media engagement with consistent posting, optimized
+            timing, user-generated content, and interactive strategies.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<section class="px-6 py-16" id="services">
+  <div class="max-w-5xl mx-auto">
+    <!-- Heading -->
+    <div>
+      <h2 class="text-4xl md:text-5xl font-bold leading-snug">
+        Your problem defines <br />
+        <span
+          style="text-decoration-color: #F56416;"
+          class="underline decoration-orange-500">our service.</span
+        >
+      </h2>
+    </div>
+
+    <section class="py-8 px-4 bg-white">
+      <div
+        class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6"
+      >
+        <!-- Card Item -->
+        <div
+          class="bg-white shadow rounded-xl p-6 hover:shadow-lg transition duration-300"
+        >
+          <div style="color: #F56416;" class="text-3xl mb-4">
+            <i class="fas fa-layer-group"></i>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Brand Management</h3>
+          <p class="text-sm text-gray-600 mb-4">
+            Complete brand framework development and consistency
+          </p>
+          <a
+            href="#"
+            style="color: #F56416;"
+            class="font-medium inline-flex items-center hover:underline"
+          >
+            Learn More <span class="ml-1">→</span>
+          </a>
+        </div>
+
+        <!-- Repeat for each card -->
+        <div
+          class="bg-white shadow rounded-xl p-6 hover:shadow-lg transition duration-300"
+        >
+          <div style="color: #F56416;" class="text-3xl mb-4">
+            <i class="fas fa-users"></i>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Social Media Marketing</h3>
+          <p class="text-sm text-gray-600 mb-4">
+            Strategic social media management and engagement
+          </p>
+          <a
+            href="#"
+            style="color: #F56416;"
+            class="font-medium inline-flex items-center hover:underline"
+          >
+            Learn More <span class="ml-1">→</span>
+          </a>
+        </div>
+
+        <div
+          class="bg-white shadow rounded-xl p-6 hover:shadow-lg transition duration-300"
+        >
+          <div style="color: #F56416;" class="text-3xl mb-4">
+            <i class="fas fa-code"></i>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Software Solutions</h3>
+          <p class="text-sm text-gray-600 mb-4">
+            Custom web and app development solutions
+          </p>
+          <a
+            href="#"
+            style="color: #F56416;"
+            class="font-medium inline-flex items-center hover:underline"
+          >
+            Learn More <span class="ml-1">→</span>
+          </a>
+        </div>
+
+        <div
+          class="bg-white shadow rounded-xl p-6 hover:shadow-lg transition duration-300"
+        >
+          <div style="color: #F56416;" class="text-3xl mb-4">
+            <i class="fas fa-bullhorn"></i>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">True Marketing</h3>
+          <p class="text-sm text-gray-600 mb-4">
+            Integrated marketing campaigns across platforms
+          </p>
+          <a
+            href="#"
+            style="color: #F56416;"
+            class="font-medium inline-flex items-center hover:underline"
+          >
+            Learn More <span class="ml-1">→</span>
+          </a>
+        </div>
+
+        <div
+          class="bg-white shadow rounded-xl p-6 hover:shadow-lg transition duration-300"
+        >
+          <div style="color: #F56416;" class="text-3xl mb-4">
+            <i class="fas fa-pencil-ruler"></i>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Graphic Design</h3>
+          <p class="text-sm text-gray-600 mb-4">
+            Creative design solutions for all your needs
+          </p>
+          <a
+            href="#"
+            style="color: #F56416;"
+            class="font-medium inline-flex items-center hover:underline"
+          >
+            Learn More <span class="ml-1">→</span>
+          </a>
+        </div>
+
+        <div
+          class="bg-white shadow rounded-xl p-6 hover:shadow-lg transition duration-300"
+        >
+          <div style="color: #F56416;" class="text-3xl mb-4">
+            <i class="fas fa-ad"></i>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Paid Advertising</h3>
+          <p class="text-sm text-gray-600 mb-4">
+            Strategic paid advertising management
+          </p>
+          <a
+            href="#"
+            style="color: #F56416;"
+            class="font-medium inline-flex items-center hover:underline"
+          >
+            Learn More <span class="ml-1">→</span>
+          </a>
+        </div>
+
+        <div
+          class="bg-white shadow rounded-xl p-6 hover:shadow-lg transition duration-300"
+        >
+          <div style="color: #F56416;" class="text-3xl mb-4">
+            <i class="fas fa-calendar-check"></i>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Event Management</h3>
+          <p class="text-sm text-gray-600 mb-4">
+            End-to-end event planning and execution
+          </p>
+          <a
+            href="#"
+            style="color: #F56416;"
+            class="font-medium inline-flex items-center hover:underline"
+          >
+            Learn More <span class="ml-1">→</span>
+          </a>
+        </div>
+
+        <div
+          class="bg-white shadow rounded-xl p-6 hover:shadow-lg transition duration-300"
+        >
+          <div style="color: #F56416;" class="text-3xl mb-4">
+            <i class="fas fa-camera-retro"></i>
+          </div>
+          <h3 class="text-lg font-semibold mb-2">Productions</h3>
+          <p class="text-sm text-gray-600 mb-4">
+            Professional photography and videography
+          </p>
+          <a
+            href="#"
+            style="color: #F56416;"
+            class="font-medium inline-flex items-center hover:underline"
+          >
+            Learn More <span class="ml-1">→</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+</section>

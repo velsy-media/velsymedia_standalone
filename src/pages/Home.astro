@@ -18,9 +18,9 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="bg-[#fefefe] text-black font-sans">
+  <body class="bg-[#fefefe] text-black custom-bglines opacity-2 font-sans">
     <!-- Header -->
-    <header class="flex justify-between items-center p-6">
+    <header class="flex  justify-between items-center p-6">
       <img src="/logo.svg" alt="Velsy" />
       <div class="space-x-4 hidden md:flex">
         <button class="bg-black text-white px-4 py-2 rounded-md"
@@ -98,6 +98,7 @@
       min-height: 400px;
       animation: float 3s ease-in-out infinite;
     }
+    
     @keyframes float {
       0% {
         transform: translateY(0);
