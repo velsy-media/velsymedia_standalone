@@ -2,157 +2,183 @@
 
 ---
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>VMedia Landing Page</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://tailwindcss.com/docs/functions-and-directives#reference-directive"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="bg-[#fefefe] text-black custom-bglines opacity-2 font-sans">
-    <!-- Header -->
-    <header class="flex  justify-between items-center p-6">
-      <img src="/logo.svg" alt="Velsy" />
-      <div class="space-x-4 hidden md:flex">
-        <button class="bg-black text-white px-4 py-2 rounded-md"
-          >Make a Call</button
-        >
-        <button class="border border-black px-4 py-2 rounded-md"
-          >Our Services</button
-        >
-      </div>
+<style>
+  /* From Uiverse.io by kennyotsu-monochromia */
+  .custom-bglines {
+    width: 100%;
+    height: 100%;
+    --color: #e1e1e1;
+    background-color: #f3f3f3;
+    background-image: linear-gradient(
+        0deg,
+        transparent 24%,
+        var(--color) 25%,
+        var(--color) 26%,
+        transparent 27%,
+        transparent 74%,
+        var(--color) 75%,
+        var(--color) 76%,
+        transparent 77%,
+        transparent
+      ),
+      linear-gradient(
+        90deg,
+        transparent 24%,
+        var(--color) 25%,
+        var(--color) 26%,
+        transparent 27%,
+        transparent 74%,
+        var(--color) 75%,
+        var(--color) 76%,
+        transparent 77%,
+        transparent
+      );
+    background-size: 180px 180px; /* Increased grid size */
+  }
+</style>
 
-      <!-- Mobile Menu Button -->
-      <div class="md:hidden">
-        <button id="menu-toggle" class="text-3xl focus:outline-none">☰</button>
-      </div>
-
-      <!-- Mobile Menu -->
-      <div
-        id="mobile-menu"
-        class="absolute right-4 top-16 bg-white shadow-lg rounded-md p-4 hidden z-50"
+<div class="text-black custom-bglines opacity-2 font-sans">
+  <!-- Header -->
+  <header class="flex justify-between items-center px-3 py-0">
+    <img src="/logo.svg" alt="Velsy" />
+    <div class="space-x-4 hidden md:flex">
+      <button class="bg-black text-white px-4 py-2 rounded-md"
+        >Make a Call</button
       >
-        <button class="block w-full text-left text-black mb-2"
-          >Make a Call</button
-        >
-        <button class="block w-full text-left text-black">Our Services</button>
-      </div>
-    </header>
+      <button class="border border-black px-4 py-2 rounded-md"
+        >Our Services</button
+      >
+    </div>
 
-    <!-- Hero Section -->
-    <section class="text-center px-6 md:px-20 mt-10">
-      <h1 class="text-4xl md:text-6xl font-extrabold">
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden">
+      <button id="menu-toggle" class="text-3xl focus:outline-none">☰</button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div
+      id="mobile-menu"
+      class="absolute right-4 top-16 bg-white shadow-lg rounded-md p-4 hidden z-50"
+    >
+      <button class="block w-full text-left text-black mb-2">Make a Call</button
+      >
+      <button class="block w-full text-left text-black">Our Services</button>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center px-6 md:px-20 mt-10">
+    <h1 class="text-4xl md:text-6xl font-extrabold">
+      <span class="relative z-30">
         REST EASY WHILE<br />
         WE TAKE CARE OF<br />
-        <span
-          style="background-color:#F56416;"
-          class="bg-orange-200 text-white px-2 py-1 mt-6"
-        >
-          YOUR DIGITAL <br />PRESENCE.
-        </span>
-      </h1>
+      </span>
 
-      <!-- Illustrations (Replace with actual images if needed) -->
-      <div
-        style="background-image: url('/Chart.svg');"
-        class="flex custom-bg justify-center items-center"
+      <span
+        style="background-color:#F56416; line-height:1; padding:0 8px; display:inline-block; height:1.2em;"
+        class="relative text-white z-20 align-middle"
       >
-        <div class="flex justify-center mt-8 mb-6"></div>
-      </div>
-      <div
-        class="bg-gray-200 rounded-full z-50 p-1 scroll-smooth flex space-x-4 navbar"
+        YOUR DIGITAL
+      </span>
+      <br />
+      <span
+        style="background-color:#F56416; line-height:1; padding:0 8px; display:inline-block; height:1.3em;"
+        class="relative text-white z-10 align-middle"
       >
-        <a
-          href="#home"
-          class="nav-item bg-black scroll-smooth text-white px-4 py-2 rounded-full"
-          >Home</a
-        >
-        <a
-          href="#services"
-          class="nav-item px-4 py-2 scroll-smooth rounded-full">Services</a
-        >
-        <a
-          href=""
-          class="nav-item lg:px-4 lg:py-2 sm:px-1 sm:py-2 text-sm md:text-base lg:text-lg rounded-full scroll-smooth"
-          >Contact Us</a
-        >
-      </div>
-    </section>
-  </body>
+        PRESENCE.
+      </span>
+    </h1>
 
-  <style>
-    .custom-bg {
-      background-image: url("/Chart.svg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center -70px; /* pushes the image up */
-      min-height: 400px;
-      animation: float 3s ease-in-out infinite;
+    <!-- Illustrations (Replace with actual images if needed) -->
+    <div
+      style="background-image: url('/Chart.svg');"
+      class="flex custom-bg justify-center items-center"
+    >
+      <div class="flex justify-center mt-8 mb-6"></div>
+    </div>
+    <div
+      class="bg-gray-200 rounded-full z-50 p-1 scroll-smooth flex space-x-4 navbar"
+    >
+      <a
+        href="#home"
+        class="nav-item bg-black scroll-smooth text-white px-4 py-2 rounded-full"
+        >Home</a
+      >
+      <a href="#services" class="nav-item px-4 py-2 scroll-smooth rounded-full"
+        >Services</a
+      >
+      <a
+        href=""
+        class="nav-item lg:px-4 lg:py-2 sm:px-1 sm:py-2 text-sm md:text-base lg:text-lg rounded-full scroll-smooth"
+        >Contact Us</a
+      >
+    </div>
+  </section>
+</div>
+
+<style>
+  .custom-bg {
+    background-image: url("/Chart.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -70px; /* pushes the image up */
+    min-height: 400px;
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0);
     }
-    
-    @keyframes float {
-      0% {
-        transform: translateY(0);
-      }
 
-      50% {
-        transform: translateY(-20px);
-      }
-
-      100% {
-        transform: translateY(0);
-      }
+    50% {
+      transform: translateY(-20px);
     }
-    .navbar {
-      position: fixed;
-      bottom: 100px; /* Adjust based on desired vertical placement */
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      background-color: #f0f0f0; /* Light background, optional */
-      border-radius: 50px;
-      scroll-behavior: smooth;
+
+    100% {
+      transform: translateY(0);
     }
-  </style>
+  }
+  .navbar {
+    position: fixed;
+    bottom: 100px; /* Adjust based on desired vertical placement */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    background-color: #f0f0f0; /* Light background, optional */
+    border-radius: 50px;
+    scroll-behavior: smooth;
+  }
+</style>
 
-  <script>
-    // Get all nav items
-    const toggle = document.getElementById("menu-toggle");
-    const menu = document.getElementById("mobile-menu");
+<script>
+  // Get all nav items
+  const toggle = document.getElementById("menu-toggle");
+  const menu = document.getElementById("mobile-menu");
 
-    toggle.addEventListener("click", () => {
-      menu.classList.toggle("hidden");
+  toggle.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+  });
+  const navItems = document.querySelectorAll(".nav-item");
+  const sections = document.querySelectorAll("section");
+
+  window.addEventListener("scroll", () => {
+    let currentSection: string | null = null;
+
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top <= 150 && rect.bottom >= 150) {
+        currentSection = section.getAttribute("id");
+      }
     });
-    const navItems = document.querySelectorAll(".nav-item");
-    const sections = document.querySelectorAll("section");
 
-    window.addEventListener("scroll", () => {
-      let currentSection: string | null = null;
-
-      sections.forEach((section) => {
-        const rect = section.getBoundingClientRect();
-        if (rect.top <= 150 && rect.bottom >= 150) {
-          currentSection = section.getAttribute("id");
-        }
-      });
-
-      navItems.forEach((item) => {
-        const href = item.getAttribute("href").substring(1); // remove the #
-        if (href === currentSection) {
-          item.classList.add("bg-black", "text-white");
-        } else {
-          item.classList.remove("bg-black", "text-white");
-        }
-      });
+    navItems.forEach((item) => {
+      const href = item.getAttribute("href").substring(1); // remove the #
+      if (href === currentSection) {
+        item.classList.add("bg-black", "text-white");
+      } else {
+        item.classList.remove("bg-black", "text-white");
+      }
     });
-  </script>
-</html>
+  });
+</script>
