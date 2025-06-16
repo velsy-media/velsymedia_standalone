@@ -1,10 +1,42 @@
 ---
 
 ---
-
+<style>
+  /* From Uiverse.io by kennyotsu-monochromia */
+  .custom-bglines {
+    width: 100%;
+    height: 100%;
+    --color: #423f3f;
+    background-color: #252525;
+    background-image: linear-gradient(
+        0deg,
+        transparent 24.5%,
+        var(--color) 24.7%,
+        var(--color) 25%,
+        transparent 25.2%,
+        transparent 74.5%,
+        var(--color) 74.7%,
+        var(--color) 75%,
+        transparent 75.2%,
+        transparent
+      ),
+      linear-gradient(
+        90deg,
+        transparent 24.5%,
+        var(--color) 24.7%,
+        var(--color) 25%,
+        transparent 25.2%,
+        transparent 74.5%,
+        var(--color) 74.7%,
+        var(--color) 75%,
+        transparent 75.2%,
+        transparent
+      );
+    background-size: 180px 180px; /* Increased grid size */
+  }
+</style>
 <section
-  style="background-color: #252525;"
-  class="text-white min-h-screen py-16 px-6 items-center"
+  class="text-white min-h-screen custom-bglines py-16 px-6 items-center"
 >
   <div
     class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-8 items-center lg:mt-10 lg:pt-10"
