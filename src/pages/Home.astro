@@ -83,7 +83,7 @@
       <br />
       <span
         style="background-color:#F56416; line-height:1; padding:0 8px; display:inline-block; height:1.3em;"
-        class="relative text-white z-10 align-middle"
+        class="relative text-white z-20 align-middle"
       >
         PRESENCE.
       </span>
@@ -97,7 +97,7 @@
       <div class="flex justify-center mt-8 mb-6"></div>
     </div>
     <div
-      class="bg-gray-200 rounded-full z-50 p-1 scroll-smooth flex space-x-4 navbar"
+      class=" rounded-full z-50 p-1 mt-8 scroll-smooth flex space-x-4 navbar"
     >
       <a
         href="#home"
@@ -122,7 +122,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center -70px; /* pushes the image up */
-    min-height: 400px;
+    min-height: 450px;
     animation: float 3s ease-in-out infinite;
   }
 
@@ -141,13 +141,17 @@
   }
   .navbar {
     position: fixed;
-    bottom: 100px; /* Adjust based on desired vertical placement */
+    bottom: 70px; /* Adjust based on desired vertical placement */
     left: 50%;
+     background: rgba(251, 251, 251, 0.95);
     transform: translateX(-50%);
-    display: flex;
-    background-color: #f0f0f0; /* Light background, optional */
+    display: flex; /* Light background, optional */
     border-radius: 50px;
     scroll-behavior: smooth;
+    justify-content: center; 
+     align-items: center; 
+     min-width: 350px;               /* Set a minimum width */
+  min-height: 64px;  
   }
 </style>
 
@@ -156,9 +160,13 @@
   const toggle = document.getElementById("menu-toggle");
   const menu = document.getElementById("mobile-menu");
 
-  toggle.addEventListener("click", () => {
-    menu.classList.toggle("hidden");
-  });
+  if (toggle) {
+    toggle.addEventListener("click", () => {
+      if (menu) {
+        menu.classList.toggle("hidden");
+      }
+    });
+  }
   const navItems = document.querySelectorAll(".nav-item");
   const sections = document.querySelectorAll("section");
 
@@ -173,7 +181,8 @@
     });
 
     navItems.forEach((item) => {
-      const href = item.getAttribute("href").substring(1); // remove the #
+      const hrefAttr = item.getAttribute("href");
+      const href = hrefAttr ? hrefAttr.substring(1) : "";
       if (href === currentSection) {
         item.classList.add("bg-black", "text-white");
       } else {
